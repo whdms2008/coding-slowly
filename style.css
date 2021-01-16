@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'GodoB';
+    src: url('font/GodoB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GodoM';
+    src: url('font/GodoM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#main_menu{
+
+}
+#whole_wrapper > .head {
+  background-color: #4d6c8b;
+}
+
+#whole_wrapper >.head header {
+  position: relative;
+  text-align: center;
+  z-index : 5;
+}
+
+#whole_wrapper > .head header hgroup{
+  padding-top : 80px;
+}
+
+#whole_wrapper > .head header hgroup p.title a {
+  color: #fff;
+  font-size : 2.4em;
+}
+
+#whole_wrapper > .head header hgroup p.title {
+  margin : 0;
+  padding : 0;
+}
+
+#whole_wrapper > .head header hgroup p.subtitle small{
+  color: #a3bfdb;
+  font-size: 1.1em;
+  padding: 0 10px;
+}
+
+#whole_wrapper > .head #main_menu {
+  height : 60px;
+}
+
+#whole_wrapper > .head header hgroup p.subtitle {
+  margin : 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#whole_wrapper>.head #main_menu>div.wrapper>ul{
+  padding: 1.2em;
+  height : 34px;
+  margin : 0;
+}
+
+#whole_wrapper >.head #main_menu>div.wrapper>ul li {
+  width : 105px;
+  text-align: left;
+  float : center;
+  display: inline-block;
+  position: relative;
+  list-style:none;
+}
+
+#whole_wrapper >.head #main_menu>div.wrapper>ul>li:first-child>div.label{
+  border-left: 0;
+}
+
+#whole_wrapper >.head #main_menu>div.wrapper>ul>li>div.label{
+  border-left: 1px solid #000;
+  padding-left : 10px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+  font-family: NanumGothic,sans-serif;
+  font-size: .75em;
+  color: #666;
+}
+
+#topic_index{
+  margin : 0;
+}
+
+
+:link{
+  text-decoration: none;
+  color : black;
+}
+
+
+header{
+}
+nav{
+  text-align : center;
+}
+section{
+  text-align : center;
+}
+
+.label:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  border-radius: 15px;
+}
+article{
+  margin-left : 60px;
+  margin-right : 60px;
+  border: 1px solid #ccc;
+}
+
+footer{
+  margin-top : -1px;
+  text-align : right;
+  border: 1px solid #ccc;
+}
