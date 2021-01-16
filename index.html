@@ -1,20 +1,56 @@
 <!doctype html>
-<html>
-<head>
-  <title>WEB2 -CSS</title>
+<html lang ="ko">
+<head >
   <meta charset="utf-8">
-  <style>
-    a{
-      color:red;
-      }
-  </style>
-  </head>
-  <body>
-    <h1><a href="index.html">WEB</a></h1>
-    <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
-      <li><a href="3.html">JavaScript</a></li>
-    </ol>
-  </body>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>쫀쫀한 코딩생활</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src ="colors.js"></script>
+</head>
+<body id ="topic_index">
+  <div id = "whole_wrapper">
+    <div class ="head">
+      <header>
+        <hgroup>
+          <p class="title">
+            <a href="">초보코딩</a>
+          </p>
+          <p class="subtitle">
+            <small>Coding Slowly</small>
+          </p>
+        </hgroup>
+      </header>
+      <nav id="main_menu"> <!--네비게이션 바 -->
+        <div class ="wrapper">
+          <ul class="sub_nav">
+            <li>
+              <div class ="label public">
+                <a class ="list" href="html.html"><img src="img/study.svg" alt="Graduation Hat icon" width = 25px>공부방</a>
+              </div>
+            </li>
+            <li>
+              <div class = "label public">
+                <a class ="list" href="html.html"><img src="img/github.svg" alt="Github cat img" width = 25px>GitHub</a>
+              </div>
+            </li>
+            <li>
+              <div class = " label public">
+                <a class ="list" href="html.html"><img src="img/box.svg" alt="box" width = 25px>코드 저장소</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id = "body">
+      <section>
+        <p>컨텐츠</p>
+        <article>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas soluta vero doloremque amet aperiam facere ab, perspiciatis, hic ullam totam aut illum delectus illo inventore accusantium neque. Amet, modi, hic?</p>
+        </article>
+      </section>
+    </div>
+    <footer><div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div></footer>
+  </div>
+</body>
 </html>
