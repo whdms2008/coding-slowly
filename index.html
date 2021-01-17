@@ -24,18 +24,28 @@
         <div class ="wrapper">
           <ul class="sub_nav">
             <li>
-              <div class ="label public">
-                <a class ="list" href="html.html"><img src="img/study.svg" alt="Graduation Hat icon" width = 25px>공부방</a>
+              <div class ="label public" onclick="
+              fetch('html.html').then(function(response){
+                response.text().then(function(text){
+                  document.querySelector('article').innerHTML = text;
+                })
+              })">
+                <a class ="list"  ><img src="img/study.svg" alt="Graduation Hat icon" width = 25px>공부방</a>
               </div>
             </li>
             <li>
               <div class = "label public">
-                <a class ="list" href="html.html"><img src="img/github.svg" alt="Github cat img" width = 25px>GitHub</a>
+                <a class ="list" href="https://github.com/whdms2008/coding-slowly"><img src="img/github.svg" alt="Github cat img" width = 25px>GitHub</a>
               </div>
             </li>
             <li>
-              <div class = " label public">
-                <a class ="list" href="html.html"><img src="img/box.svg" alt="box" width = 25px>코드 저장소</a>
+              <div class = " label public" onclick="
+              fetch('javascript.html').then(function(response){
+                response.text().then(function(text){
+                  document.querySelector('article').innerHTML = text;
+                })
+              })">
+                <a class ="list" ><img src="img/box.svg" alt="box" width = 25px>코드 저장소</a>
               </div>
             </li>
           </ul>
@@ -46,7 +56,6 @@
       <section>
         <p>컨텐츠</p>
         <article>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas soluta vero doloremque amet aperiam facere ab, perspiciatis, hic ullam totam aut illum delectus illo inventore accusantium neque. Amet, modi, hic?</p>
         </article>
       </section>
     </div>
