@@ -40,10 +40,7 @@
             </li>
             <li>
               <div class = " label public" onclick="
-              fetch('javascripts.html').then(function(response){
-                if(response.status == 404){
-                  alert('not found');
-                }
+              fetch('javascript.html').then(function(response){
                 response.text().then(function(text){
                   document.querySelector('article').innerHTML = text;
                 })
