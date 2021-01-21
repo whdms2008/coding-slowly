@@ -23,31 +23,6 @@
       <nav id="main_menu"> <!--네비게이션 바 -->
         <div class ="wrapper">
           <ul class="sub_nav">
-            <li>
-              <div class ="label public" onclick="
-              fetch('html.html').then(function(response){
-                response.text().then(function(text){
-                  document.querySelector('article').innerHTML = text;
-                })
-              })">
-                <a class ="list"  ><img src="img/study.svg" alt="Graduation Hat icon" width = 25px>공부방</a>
-              </div>
-            </li>
-            <li>
-              <div class = "label public">
-                <a class ="list" href="https://github.com/whdms2008/coding-slowly"><img src="img/github.svg" alt="Github cat img" width = 25px>GitHub</a>
-              </div>
-            </li>
-            <li>
-              <div class = " label public" onclick="
-              fetch('javascript.html').then(function(response){
-                response.text().then(function(text){
-                  document.querySelector('article').innerHTML = text;
-                })
-              })">
-                <a class ="list" ><img src="img/box.svg" alt="box" width = 25px>코드 저장소</a>
-              </div>
-            </li>
           </ul>
         </div>
       </nav>
@@ -61,5 +36,29 @@
     </div>
     <footer><div>아이콘 제작자 <a href="https://www.flaticon.com/kr/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/kr/" title="Flaticon">www.flaticon.com</a></div></footer>
   </div>
+  <script>
+  function fetchPage(name){
+    fetch(name).then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML = "<h1>제목 : "+name+"</h5>"+text;
+      })
+    })
+  };
+  if(location.hash){
+    fetchPage(location.hash.substr(2));
+  } else{
+    fetchPage('welcome');
+  }
+  fetch('list').then(function(response){
+    response.text().then(function(text){
+      var items = text.split(',')
+      var tags = '';
+      for(var i=0;i>itmes.length;i++){
+        tags = tags + '<li>'+items[i]+'</li>';
+      }
+      document.querySelector('.sub_nav').innerHTML = tags;
+    })
+  })
+  </script>
 </body>
 </html>
