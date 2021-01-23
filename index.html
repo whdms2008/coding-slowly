@@ -53,7 +53,7 @@
     response.text().then(function(text){
       var items = text.split(',')
       var tags = '';
-      for(var i=0;i>items.length;i++){
+      for(var i=0;i<items.length;i++){
         tags = tags + '<li>'+items[i]+'</li>';
       }
       document.querySelector('.sub_nav').innerHTML = tags;
