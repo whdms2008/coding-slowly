@@ -42,8 +42,8 @@
       response.text().then(function(text){
         document.querySelector('article').innerHTML = "<h1>제목 : "+name+"</h5>"+text;
       })
-    })
-  };
+    });
+  }
   if(location.hash){
     fetchPage(location.hash.substr(2));
   } else{
