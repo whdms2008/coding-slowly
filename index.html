@@ -54,7 +54,7 @@
       var items = text.split(',')
       var tags = '';
       for(var i=0;i<items.length;i++){
-        tags = tags + '<li><div class = "label public"><a href="#!'+items[i]+'onclick="fetchPage('+items[i]+')>'+items[i]+'</a></div></li>';
+        tags = tags + '<li><div class = "label public"><a href="#!'+items[i]+'" onclick="fetchPage('+items[i]+')">'+items[i]+'</a></div></li>';
       }
       document.querySelector('.sub_nav').innerHTML = tags;
     })
