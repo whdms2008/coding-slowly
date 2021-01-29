@@ -52,9 +52,13 @@
   fetch('list').then(function(response){
     response.text().then(function(text){
       var items = text.split(',')
+      var i = 0;
       var tags = '';
-      for(var i=0;i<items.length;i++){
-        tags = tags + '<li><div class = "label public"><a href="#!'+items[i]+'" onclick="fetchPage(\''+items[i]+'\')">'+items[i]+'</a></div></li>';
+      for(i = 0; i < items.length;i++){
+        var item = items[i];
+        item = item.trim();
+        var tag = '<li><div class = "label public"><a href="#!'+item+'"onclick="fetchPage(\''+item+'\')">'+item+'</a></div></li>';
+        tags = tags + tag;
         console.log(tags);
       }
       document.querySelector('.sub_nav').innerHTML = tags;
