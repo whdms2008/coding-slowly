@@ -9,6 +9,18 @@
   <script src="fetch/fetch.js"></script>
 </head>
 <body id ="topic_index">
+  <script>
+    var result = fetch('https://api.github.com')
+    result.then(function(response) {
+      console.log('response', response)
+      console.log('header', response.headers.get('Content-Type'))
+      return response.text()
+    }).then(function(text) {
+      console.log('got text', text)
+    }).catch(function(ex) {
+      console.log('failed', ex)
+    })
+  </script>
   <div id = "whole_wrapper">
     <div class ="head">
       <header>
