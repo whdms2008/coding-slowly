@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <script>
+      link = "https://github.com/whdms2008/coding-slowly";
+      newPage=window.open(link);
+    </script>
+  </head>
+  <body>
+    <a href = "index.html">HOME </a> </br>
+    <input type="button" value ="night" onclick="nightdayHandler(this);"></br>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus minus earum corporis nisi, modi atque odit amet quis tenetur saepe nemo deserunt architecto laboriosam, explicabo cum. Ducimus eaque porro eius id asperiores sequi atque nesciunt, voluptatibus quasi similique ex quas beatae, minima, vero laborum error distinctio repellendus ipsa voluptatum officia, vel temporibus eum esse. Odio eum molestias, dolore facilis, aliquam ex rem sequi assumenda consectetur saepe ut nulla debitis officiis reprehenderit cumque ipsam, vitae dignissimos veniam rerum eos! Incidunt quas quasi laboriosam nihil quae expedita asperiores! Doloribus qui fuga porro illo ab magni ex, sapiente architecto dicta vel! Beatae, ipsa.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus fugiat nihil, alias in repellat unde velit corporis, itaque debitis, soluta deserunt vel cupiditate atque quasi reprehenderit. Magni pariatur deleniti consequuntur, enim eaque iusto aperiam minus distinctio sint quisquam. Soluta accusamus dignissimos laudantium veritatis vitae, nobis reiciendis illo ipsum quis, quia delectus consectetur ut cumque, expedita! Unde officiis reiciendis dolores neque error, ad magni praesentium a quas. Qui at quisquam, dolores excepturi id cupiditate quas reiciendis iste provident rerum numquam, doloribus deleniti voluptatibus ad, hic dignissimos, quidem eius? Laborum quasi debitis recusandae asperiores incidunt nulla nihil iusto facere vel. Ipsa, deserunt.</p>
+    <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maxime repudiandae aperiam qui, sapiente blanditiis. Voluptates laborum vitae totam suscipit animi, quo eum eius? Inventore excepturi cupiditate quas aliquam delectus culpa, repellat iusto earum quibusdam voluptas. Rerum rem qui animi ratione impedit excepturi doloribus vero fuga quae, enim doloremque aliquam hic velit quaerat illum error magnam! Modi asperiores perferendis ex optio dignissimos, excepturi dicta dolorem, aperiam ipsam in molestiae. Quam eaque, dolor placeat rerum nisi fuga ipsum at esse animi a voluptatem ullam recusandae vitae, culpa nihil. Nemo, aperiam voluptatum sapiente quos ex et ratione dolore necessitatibus. Recusandae unde, voluptatem?</p>
+  </body>
+</html>
