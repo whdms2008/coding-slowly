@@ -4,15 +4,33 @@
     font-weight: normal;
     font-style: normal;
 }
+
+#nav > {
+  <img src="img/study.svg" alt="Graduation Hat icon" width = 25px>
+  <img src="img/github.svg" alt="Github cat img" width = 25px>
+  <img src="img/box.svg" alt="box" width = 25px>
+}
+
+#whole_wrapper div#body .contents {
+  line-height: 40px;
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+}
+
+#whole_wrapper div#body .contents .wrapper {
+  padding-left : 100px;
+  padding-right : 100px;
+}
+
+
 @font-face {
     font-family: 'GodoM';
     src: url('font/GodoM.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
-#main_menu{
-
+#main_menu > .wrapper ul.sub_nav li div.label{
+  cursor : pointer;
 }
 #whole_wrapper > .head {
   background-color: #4d6c8b;
@@ -119,6 +137,7 @@ article{
   margin-left : 60px;
   margin-right : 60px;
   border: 1px solid #ccc;
+  text-align: center;
 }
 
 footer{
